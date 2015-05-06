@@ -1,4 +1,4 @@
-package com.tutaona.ninolo
+package com.tutaona.asyncmongo
 
 import com.google.inject.Provides
 import com.google.inject.Singleton
@@ -35,7 +35,7 @@ class MongoModule extends ConfigurableModule<Config> {
     @Singleton
     Morphia morphia() {
         def morphia = new Morphia()
-        morphia.mapPackageFromClass(com.tutaona.ninolo.domain.User)
+        morphia.mapPackageFromClass(com.tutaona.asyncmongo.domain.User)
         return morphia
     }
 

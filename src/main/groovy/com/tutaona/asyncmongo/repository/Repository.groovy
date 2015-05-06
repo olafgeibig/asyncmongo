@@ -1,4 +1,4 @@
-package com.tutaona.ninolo.repository
+package com.tutaona.asyncmongo.repository
 
 import groovy.transform.CompileStatic
 import org.bson.types.ObjectId

@@ -1,4 +1,4 @@
-package com.tutaona.ninolo.domain
+package com.tutaona.asyncmongo.domain
 
 import com.fasterxml.jackson.annotation.JsonFormat
 import groovy.transform.Canonical

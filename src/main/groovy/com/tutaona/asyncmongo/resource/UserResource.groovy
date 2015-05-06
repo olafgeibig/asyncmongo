@@ -1,7 +1,7 @@
-package com.tutaona.ninolo.resource
+package com.tutaona.asyncmongo.resource
 
-import com.tutaona.ninolo.domain.User
-import com.tutaona.ninolo.repository.UserRepository
+import com.tutaona.asyncmongo.domain.User
+import com.tutaona.asyncmongo.repository.UserRepository
 import groovy.util.logging.Slf4j
 import org.bson.types.ObjectId
 import ratpack.func.Action

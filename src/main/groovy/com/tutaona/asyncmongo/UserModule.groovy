@@ -1,9 +1,9 @@
-package com.tutaona.ninolo;
+package com.tutaona.asyncmongo;
 
 import com.google.inject.AbstractModule
 import com.google.inject.Scopes
-import com.tutaona.ninolo.repository.UserRepository
-import com.tutaona.ninolo.resource.UserResource
+import com.tutaona.asyncmongo.repository.UserRepository
+import com.tutaona.asyncmongo.resource.UserResource
 
 /**
  * User: olaf.geibig@tutaona.com

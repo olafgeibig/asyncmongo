@@ -1,10 +1,10 @@
-package com.tutaona.ninolo.repository
+package com.tutaona.asyncmongo.repository
 
 import com.google.inject.Inject
 import groovy.transform.CompileStatic
 import org.mongodb.morphia.Datastore
 import ratpack.exec.ExecControl
-import com.tutaona.ninolo.domain.User
+import com.tutaona.asyncmongo.domain.User
 
 /**
  * User: olaf.geibig@tutaona.com

@@ -1,7 +1,7 @@
 import com.mongodb.MongoClientURI
-import com.tutaona.ninolo.MongoModule
-import com.tutaona.ninolo.UserModule
-import com.tutaona.ninolo.resource.UserResource
+import com.tutaona.asyncmongo.MongoModule
+import com.tutaona.asyncmongo.UserModule
+import com.tutaona.asyncmongo.resource.UserResource
 import ratpack.jackson.JacksonModule
 
 import static ratpack.groovy.Groovy.ratpack
@@ -12,7 +12,7 @@ ratpack {
 
         add MongoModule, { config ->
             config.connectionString = new MongoClientURI("mongodb://localhost:27017/")
-            config.dbName = "ninolo"
+            config.dbName = "asyncmongo"
         }
 
         add JacksonModule, { config ->
