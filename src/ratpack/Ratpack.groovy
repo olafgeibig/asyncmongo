@@ -5,8 +5,11 @@ import com.tutaona.asyncmongo.resource.UserResource
 import ratpack.jackson.JacksonModule
 
 import static ratpack.groovy.Groovy.ratpack
+import ratpack.rx.RxRatpack
 
 ratpack {
+
+    RxRatpack.initialize()
 
     bindings {
 

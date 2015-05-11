@@ -11,7 +11,7 @@ import com.tutaona.asyncmongo.domain.User
  * Created: 27.03.15 21:21
  */
 @CompileStatic
-class UserRepository extends Repository<User> {
+class UserRepository extends RepositoryRx<User> {
 
     @Inject
     UserRepository(ExecControl execControl, Datastore datastore) {

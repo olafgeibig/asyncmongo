@@ -39,9 +39,9 @@ class UserResource implements Action<Chain> {
                         }
 
                         if (id) {
-                            userRepository.get(id).then { User user ->
+                            userRepository.get(id).single().subscribe { User user ->
                                 println user
-                                render json(user)
+                                render user
                             }
                         }
                     }
@@ -51,15 +51,15 @@ class UserResource implements Action<Chain> {
             handler {
                 byMethod {
                     get {
-                        userRepository.findAll().then { List<User> users ->
-                            render json(users)
+                        userRepository.findAll().subscribe { List<User> users ->
+                            render users
                         }
                     }
 
                     post {
                         def user = parse(User)
-                        userRepository.save(user).then {
-                            render json(user)
+                        userRepository.save(user).subscribe {
+                            render user
                         }
                     }
                 }
